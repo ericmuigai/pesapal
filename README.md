@@ -11,6 +11,7 @@ add "ericmuigai/pesapal": "2.*" to your composer.json and then composer update
 this will install the package
 Once the package is installed add <pre>'Ericmuigai\Pesapal\PesapalServiceProvider',</pre> to the providers.
 after this publish the config file by <pre>php artisan config:publish ericmuigai/pesapal</pre>
+then migrate the package table by using <pre>php artisan migrate --package=ericmuigai/pesapal</pre>
 You should now find the config.php in the <pre>app/packages/ericmuigai/pesapal </pre>
 
 <h2>Configuration</h2>
