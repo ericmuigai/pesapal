@@ -12,7 +12,9 @@ this will install the package
 Once the package is installed add <pre>'Ericmuigai\Pesapal\PesapalServiceProvider',</pre> to the providers.
 after this publish the config file by <pre>php artisan config:publish ericmuigai/pesapal</pre>
 then migrate the package table by using <pre>php artisan migrate --package=ericmuigai/pesapal</pre>
+Go to your pesapal account and in the ipn url enter <pre>yoursite.com/listenipn</ipn> or or the url to your public path/listenipn
 You should now find the config.php in the <pre>app/packages/ericmuigai/pesapal </pre>
+
 
 <h2>Configuration</h2>
 This is what you should see in the config.php
