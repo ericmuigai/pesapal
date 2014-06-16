@@ -1,4 +1,4 @@
-pesapal
+Pesapal package for Laravel
 =======
 <h2>Introduction</h2>
 This is a Laravel 4.1 pesapal package.
