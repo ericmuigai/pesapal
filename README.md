@@ -62,7 +62,7 @@ The array should have this info in the <pre>$array</pre>
      * email - this should be a valid email or pesapal will throw an error
      * phone_number -which is option if you have the email
      * amount - the total amount to be posted to pesapal
-     * reference Please Make sure this is a unique key to the transaction. May be left empty it will be auto generated
+     * reference Please <em>Make sure this is a unique key to the transaction</em>. <em>An example is the id of the item or something</em>
      * type - default is MERCHANT
      * frame_height- this is the height of the iframe please provide integers as in 900 without the px
      *
