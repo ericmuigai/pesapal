@@ -7,7 +7,7 @@ Pesapal do not have a way to test this so I guess you will have to send money
 payments to test
 
 <h2>Installation</h2>
-add <pre>"ericmuigai/pesapal": "2.*@dev"</pre> to your composer.json and then composer update
+add <pre>"ericmuigai/pesapal": "2.*@dev"</pre> to your composer.json and then <pre>composer update</pre>
 this will install the package
 Once the package is installed add <pre>'Ericmuigai\Pesapal\PesapalServiceProvider',</pre> to the providers.
 after this publish the config file by <pre>php artisan config:publish ericmuigai/pesapal</pre>
