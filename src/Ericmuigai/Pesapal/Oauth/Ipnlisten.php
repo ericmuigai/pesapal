@@ -66,7 +66,7 @@ if(count($payment) == 1){
     $controller = $controller;
     //if status is COMPLETE and the controller is not empty
     //then call controller defined by the user to do whatever it has to
-    if($status =="COMPLETE" && $controller !=""){
+    if($status =="COMPLETED" && $controller !=""){
         $obj = new $controller();
         echo $obj->updateItem($key,$pesapal_merchant_reference);
 if($mail ==true){
