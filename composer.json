@@ -22,7 +22,7 @@
     },
     "extra": {
         "component": "package",
-        "frameworks": ["Laravel 4.1"],
+        "frameworks": ["Laravel 5.0"],
         "versions": {
             "1": "1.1/master",
             "2": "master"
