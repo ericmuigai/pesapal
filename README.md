@@ -1,11 +1,11 @@
 Pesapal package for Laravel
 =======
 <h2>Introduction</h2>
-This is a Laravel 4.1 pesapal package.
-I provided this package as to help.
+This is a Laravel 4.2 pesapal package.
+I provided this package as to help since pesapal do not have a package for Laravel.
 Pesapal do not have a way to test this so I guess you will have to send money
 payments to test
-
+<em>For those using Laravel 5, Please mail me so I can get to update it. I have not gotten the chance to do so. Thanks
 <h2>Installation</h2>
 add <pre>"ericmuigai/pesapal": "2.*@dev"</pre> to your composer.json and then <pre>composer update</pre>
 this will install the package
@@ -62,7 +62,7 @@ The array should have this info in the <pre>$array</pre>
      * first_name- the first name of the user that is paying
      * last_name - the last name of the user that is paying
      * email - this should be a valid email or pesapal will throw an error
-     * phone_number -which is option if you have the email
+     * phone_number -which is optional if you have the email
      * amount - the total amount to be posted to pesapal
      * reference Please <em>Make sure this is a unique key to the transaction</em>. <em>An example is the id of the item or something</em>
      * type - default is MERCHANT
