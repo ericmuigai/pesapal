@@ -7,11 +7,11 @@ Pesapal do not have a way to test this so I guess you will have to send money
 payments to test
 <h3> For <a href='https://github.com/ericmuigai/pesapal/tree/4.2'>Laravel 4.2</a>
 <h2>Installation</h2>
-add <pre>"ericmuigai/pesapal": "2.*@dev"</pre> to your composer.json and then <pre>composer update</pre>
+add <pre>"ericmuigai/pesapal": "3.0.x-dev"</pre> to your composer.json and then <pre>composer update</pre>
 this will install the package
 Once the package is installed add <pre>'Ericmuigai\Pesapal\PesapalServiceProvider',</pre> to the providers.
 after this publish the config file by <pre>php artisan config:publish ericmuigai/pesapal</pre>
-then migrate the package table by using <pre>php artisan migrate --package=ericmuigai/pesapal</pre>
+then migrate the package table by using <pre>php artisan vendor:publish</pre>
 Go to your pesapal account and in the ipn url enter <pre>yoursite.com/listenipn</pre> or or the url to your public path/listenipn<br/>
 You should now find the config.php in the <pre>app/packages/ericmuigai/pesapal </pre>
 
@@ -24,7 +24,7 @@ This is what you should see in the config.php
  * enabled(bool) -if true sets the pesapal to live instead of demo website that was not functioning at the time of writing this package
  * consumer_key the consumer key gotten from the pesapal website
  * consumer_secret- The consumer secret gotten from the pesapal website
- * controller - This is the controller that will be called if the status is valid,
+ * controller - This is the controller that will be called if the status is valid. A method updateItem($key, $pesapal_merchant_reference) will be called
  * please note the method that will be called will be updateItem and should be static that is update($key,$reference)
  * Key- the key to protect the method from being called elsewhere
  * redirectTo - the link to where your thankyou page is
