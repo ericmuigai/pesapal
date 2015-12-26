@@ -4,7 +4,7 @@ Pesapal package for Laravel
 This is a Laravel 5.* pesapal package.
 I provided this package as to help since pesapal do not have a package for Laravel.
 <strong>Pesapal do not have a way to test this so I guess you will have to send money
-payments to test. Please do ping me whenever you need something</strong>
+payments to test. Please do ping me whenever you need something.</strong>
 <h3> For <a href='https://github.com/ericmuigai/pesapal/tree/4.2'>Laravel 4.2</a>
 <h2>Installation</h2>
 add <pre>"ericmuigai/pesapal": "3.0.x-dev"</pre> to your composer.json and then <pre>composer update</pre>
@@ -23,8 +23,8 @@ This is what you should see in the config.php
  * this settings are needed in order to work with pesapal
  * enabled(bool) -if true sets the pesapal to live instead of demo website that was not functioning at the time of writing this package
  * consumer_key the consumer key gotten from the pesapal website
- * consumer_secret- The consumer secret gotten from the pesapal website
- * controller - This is the controller that will be called if the status is valid. A method updateItem($key, $pesapal_merchant_reference) will be called
+ * consumer_secret- The consumer secret gotten from the pesapal website.
+ * controller - This is the controller that will be called if the status is valid. <strong>A method updateItem($key, $pesapal_merchant_reference) will be called.</strong>
  * please note the method that will be called will be updateItem and should be static that is update($key,$reference)
  * Key- the key to protect the method from being called elsewhere
  * redirectTo - the link to where your thankyou page is
@@ -70,3 +70,7 @@ The array should have this info in the <pre>$array</pre>
      *
      */'
      </pre>
+<h2>Author</h2>
+Eric Muigai- hot254.co.ke
+<h2>License</h2>
+Licensed under MIT
