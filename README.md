@@ -1,10 +1,10 @@
 Pesapal package for Laravel
 =======
 <h2>Introduction</h2>
-This is a Laravel 5.1 pesapal package.
+This is a Laravel 5.* pesapal package.
 I provided this package as to help since pesapal do not have a package for Laravel.
-Pesapal do not have a way to test this so I guess you will have to send money
-payments to test
+<strong>Pesapal do not have a way to test this so I guess you will have to send money
+payments to test. Please do ping me whenever you need something</strong>
 <h3> For <a href='https://github.com/ericmuigai/pesapal/tree/4.2'>Laravel 4.2</a>
 <h2>Installation</h2>
 add <pre>"ericmuigai/pesapal": "3.0.x-dev"</pre> to your composer.json and then <pre>composer update</pre>
@@ -13,7 +13,7 @@ Once the package is installed add <pre>'Ericmuigai\Pesapal\PesapalServiceProvide
 after this publish the config file by <pre>php artisan config:publish ericmuigai/pesapal</pre>
 then migrate the package table by using <pre>php artisan vendor:publish</pre>
 Go to your pesapal account and in the ipn url enter <pre>yoursite.com/listenipn</pre> or or the url to your public path/listenipn<br/>
-You should now find the config.php in the <pre>app/packages/ericmuigai/pesapal </pre>
+You should now find the config.php in the <pre>config/pesapal.php </pre>
 
 
 <h2>Configuration</h2>
