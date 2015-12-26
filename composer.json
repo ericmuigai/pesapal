@@ -1,0 +1,35 @@
+{
+    "name": "ericmuigai/pesapal",
+    "description": "This is a Pesapal package for Laravel 5 .Please test it first before deploying. ",
+    "keywords": ["pesa","pesapal","kenya","laravel","payments"],
+    "authors": [
+        {
+            "name": "eric",
+            "email": "emuigai5@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Ericmuigai\\Pesapal\\": "src/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "frameworks": ["Laravel 5.*"],
+        "versions": {
+            "1": "1.1/master",
+            "2": "master"
+        },
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
