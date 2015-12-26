@@ -71,6 +71,6 @@ The array should have this info in the <pre>$array</pre>
      */'
      </pre>
 <h2>Author</h2>
-Eric Muigai- hot254.co.ke
+Eric Muigai- http://www.hot254.co.ke
 <h2>License</h2>
 Licensed under MIT
